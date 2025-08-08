@@ -1,0 +1,9 @@
+## Best Practices for IAM Automation Scripts:
+
+1. Use least privilege when assigning policies.
+
+2 .Always audit with get_credential_report().
+
+3 Use CloudTrail to log changes to IAM.
+
+4 Avoid hard-coding credentials. Use IAM roles or ~/.aws/credentials.

@@ -1,0 +1,42 @@
+#class python script example for DevOps Engineer in real time scenario
+
+# Here's a Python script that automates the deployment of an application using AWS and Docker, 
+  a common real-time scenario for a DevOps Engineer.
+
+# A DevOps Engineer needs to deploy a containerized application to an AWS EC2 instance, ensuring 
+  the latest version is always pulled from a container registry (DockerHub or ECR).
+
+# Features of the Script:
+1. Connects to an AWS EC2 instance using SSH.
+
+2. Pulls the latest Docker image from a registry.
+
+3. Stops and removes any existing container.
+
+4. Runs the new container with the updated image.
+
+
+# Python Script (deploy_app.py)
+  Ensure you have paramiko installed (pip install paramiko).
+
+# How This Works:
+1. SSH into EC2: Uses Paramiko to securely connect to the AWS instance.
+
+2. Pull Latest Image: Ensures the latest version of the app is deployed.
+
+3. Stop & Remove Old Container: Avoids conflicts with the previous deployment.
+
+4. Run the New Container: Starts the updated version of the app on port 80.
+
+
+# Prerequisites:
+1. An AWS EC2 instance with Docker installed.
+
+2. A private key (.pem) for SSH authentication.
+
+3. The Docker image pushed to DockerHub or AWS ECR.
+
+4. Python installed with paramiko.
+
+# This script can be extended to use AWS Systems Manager (SSM) for more secure access. 🚀
+  Let me know if you need enhancements!
